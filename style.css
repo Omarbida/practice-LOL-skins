@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+body{
+    background-color: black;
+}
+.container1{
+    background-color: rgb(0, 0, 0);
+    padding:  0 0;    
+}
+.header{
+    height: 10vh;   
+    background:radial-gradient(rgba(230, 204, 115, 1),rgba(230, 203, 115, 0.824),rgba(148, 114, 57, 1),rgba(85, 66, 39, 1));
+    box-shadow: 0px 0px 20px rgba(237, 205, 99, 0.398);
+    position:fixed;
+    top: 0;
+    margin: 0 0;
+}
+.logo{
+    height: 100%;
+}
+.logo img{
+    height: 100%;
+}
+.nav-bar{ 
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar a{   
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border-radius: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+    height: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar input{ 
+    background-color: rgba(0, 0, 0, 0.297);   
+    font-size: 20px;
+    padding: 0;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.nav-bar button{
+    border: 2px solid rgb(61, 51, 17);
+    background-color: rgb(100, 77, 37);
+    color: rgb(255, 255, 255);    
+    font-size: 15px;
+    padding: 5px 5px;    
+    border-radius: 10px;
+}
+.nav-bar button:hover{
+    scale: 105%;
+}
+ ::placeholder{
+    color: rgba(0, 0, 0, 0.666);
+}
+.nav-bar a:hover{
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.background{
+    top: 15vh;
+    height: 80vh;
+    background-image: url("images/background.png");   
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;    
+}
+.box{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.box img{
+    height: 250px;
+    width: 140px;
+}
+.box div{    
+    color: rgba(230, 204, 115, 1);
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px rgba(230, 204, 115, 1);
+}

@@ -116,10 +116,13 @@ body{
     cursor: pointer;
     position: relative;
 }
-.box img{
+.imgdiv{
     height: 250px;
     width: 140px;
+    background-size: cover;
+    border-radius: 10px;
 }
+
 .info{    
     color: rgba(230, 204, 115, 1);
     font-size: 20px;
@@ -134,9 +137,15 @@ body{
 }
 .price{
     position: absolute;
-    top: 40%;
-    color: azure;
+    top:185px;
+    display: flex;
+    color: rgba(230, 204, 115, 1);
+    text-shadow: 2px 2px 5px rgba(230, 204, 115, 1);
     font-weight: bold;
     font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
     
 }

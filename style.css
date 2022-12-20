@@ -68,13 +68,14 @@ body{
     background-color: rgba(0, 0, 0, 0.2);
 }
 .background{
-    top: 15vh;
+    margin-top: 15vh;
     height: 80vh;
     background-image: url("images/background.png");   
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 0;
+    
 }
 .content{
     display: flex;

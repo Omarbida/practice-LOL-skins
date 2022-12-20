@@ -12,17 +12,47 @@
 
 <body>
   <div class="container container1">
-    <div class="header container row">
-        <div class="logo col-md-4"><img src="images/LOL logo.png" alt=""></div>
-        <div class="nav-bar col-md-8 row">
-            <a class="navlink col-md-2" href="">Home</a>
-            <a class="navlink col-md-2" href="">About</a>
-            <a class="navlink col-md-2" href="">Top Salles</a>
-            <a class="navlink col-md-2" href="">Contact</a>
-            <input type="text" placeholder="Search"  class="navlink col-md-2">
-            <button class=" col-md-1"> Search</button>
+    <nav class="navbar navbar-expand-lg header">
+        <div class="container-fluid head">
+            <a class="navbar-brand logo" href="#"><img src="images/LOL logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nv" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-bar">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Filter
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="#">Legacy</a></li>
+                            <li><a class="dropdown-item" href="#">Legendary</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Limited</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Comming soon</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class=" input1 me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class=" btn1" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-    </div>
+    </nav>
+
     <div class="background container"></div>
     <div id="content" class="content container-fluid">
         <div class="box col-md-3 col-sm-4 ">

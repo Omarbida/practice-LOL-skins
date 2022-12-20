@@ -1,5 +1,5 @@
 let _content = document.getElementById("content")
-let _card =  '<div class="box col-md-3 col-sm-4 ">\
+let _card =  '<div class="box col-6 col-md-3 col-sm-4 ">\
             <img src="images/$$imageurl.jpg" alt="">\
             <div class="info">$$name</div>\
         </div>'

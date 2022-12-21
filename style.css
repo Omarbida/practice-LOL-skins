@@ -137,8 +137,9 @@ body{
 }
 .price{
     position: absolute;
-    top:185px;
+    top:150px;
     display: flex;
+    flex-direction: column;
     color: rgba(230, 204, 115, 1);
     text-shadow: 2px 2px 5px rgba(230, 204, 115, 1);
     font-weight: bold;

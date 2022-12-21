@@ -1,7 +1,9 @@
 let _content = document.getElementById("content")
 let _card =  '<div id="$$imageurl" class="box col-6 col-md-3 col-sm-4 ">\
              <div id="$$imgID" class="imgdiv" style="background-image: url(images/$$imageurl.jpg);"></div>\
-            <div id="$$IDprice" class="price">$$price</div>\
+            <div id="$$IDprice" class="price">\
+            <button class=" btn1" type="submit">Order Now</button>\
+            $$price</div>\
             <div class="info">$$name</div>\
         </div>'
 let skins = [

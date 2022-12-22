@@ -5,7 +5,6 @@ let _legendary = document.getElementById("legendary")
 let _limited = document.getElementById("limited")
 let _filter = document.getElementById("filter")
 let _search = document.getElementById("search")
-let _searchButton = document.getElementById("submitsearch")
 let searchValue
 let selectedType = "All Skins"
 let _card =  '<div  class="box1 col-6 col-md-3 col-sm-4 ">\
@@ -489,7 +488,8 @@ function showContent() {
      
 });
 }
-_searchButton.addEventListener("click",()=>{
-    searchValue = _search.value;
+setInterval(function() { ObserveInputValue(_search.value); }, 100);
+function ObserveInputValue(value) {
+    searchValue = value;
     filterSkins(searchValue)
-})
+}

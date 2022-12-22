@@ -81,16 +81,14 @@ body{
     justify-content: center;
 }
 .btn1{
-    border: 2px solid rgb(61, 51, 17);
-    background-color: rgb(100, 77, 37);
     color: rgb(255, 255, 255);    
     font-size: 15px;
     padding: 5px 5px;    
     border-radius: 10px;
+    height: 35px;
+    filter: invert(100%) sepia(1%) saturate(7497%) hue-rotate(40deg) brightness(108%) contrast(101%);
 }
-.btn1:hover{
-    scale: 105%;
-}
+
  ::placeholder{
     color: rgba(0, 0, 0, 0.666);
 }

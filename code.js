@@ -23,409 +23,409 @@ let skins = [
     {
         imageurl: "ahri-spirit-blossom",
         price :"$ 8.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"akali-star-guardian",
         price :"$ 7.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"ashe-fae-dragon",
         price :"$ 3.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"ashe-heartseeker",
         price :"$ 5.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"ashe-high-noon",
         price :"$ 9.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"ashe-project",
         price :"$ 6.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"ashe-sherwood-forest",
         price :"$ 3.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"chogath-shan-hai-scrolls",
         price :"$ 6.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"ekko-star-guardian-prestige",
         price :"$ 11.99",
-        type: "limited"
+        type: "Limited"
     },
     {
         imageurl:"ekko-true-damage",
         price :"$ 9.99",
-        type: "legendary"
+        type: "Legendary"
        
     },
     {
         imageurl:"ezreal-pulsefire",
         price :"$ 18.99",
-        type: "limited"
+        type: "Limited"
     },
     {
         imageurl:"graves-sentinel",
         price :"$ 8.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"jhin-dark-cosmic",
         price :"$ 12.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"jinx-star-guardian",
         price :"$ 12.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"kaisa-star-guardian",
         price :"$ 12.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"katarina-battle-queen",
         price :"$ 9.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"katarina-redcard",
         price :"$ 7.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"kindred-shadowfire",
         price :"$ 13.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"kindred-spirit-blossom",
         price :"$ 15.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"kindred-super-galaxy",
         price :"$ 13.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"leblanc-coven-prestige-edition",
         price :"$ 19.99",
-        type: "limited"
+        type: "Limited"
     },
     {
         imageurl:"lee-sin-storm-dragon",
         price :"$ 14.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"leona-battle-academia",
         price :"$ 8.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"leona-battle-academia-prestige-edition",
         price :"$ 13.99",
-        type: "limited"
+        type: "Limited"
     },
     {
         imageurl:"leona-debonair",
         price :"$ 6.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"leona-high-noon",
         price :"$ 11.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"leona-lunar-eclipse",
         price :"$ 12.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"lucian-high-noon",
         price :"$ 12.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"lux-dark-cosmic",
         price :"$ 14.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"lux-elementalist",
         price :"$ 23.99",
-        type: "limited"
+        type: "Limited"
     },
     {
         imageurl:"lux-empyrean",
         price :"$ 16.99",
-        type: "limited"
+        type: "Limited"
     },
     {
         imageurl:"lux-pajama-guardian",
         price :"$ 8.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"lux-spellthief",
         price :"$ 4.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"master-yi-cosmic-blade",
         price :"$ 12.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"master-yi-assassin",
         price :"$ 5.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"master-yi-project",
         price :"$ 5.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"master-yi-psyops",
         price :"$ 6.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"miss-fortune-battlebunny",
         price :"$ 12.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"miss-fortune-gungoddess",
         price :"$ 12.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"mordekaiser-dark-star",
         price :"$ 16.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"mordekaiser-infernal",
         price :"$ 4.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"mordekaiser-project",
         price :"$ 17.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"morgana-blackthorn",
         price :"$ 5.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"morgana-blade-mistress",
         price :"$ 6.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"morgana-coven",
         price :"$ 12.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"morgana-dawn-bringer",
         price :"$ 9.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"morgana-star-nemesis",
         price :"$ 11.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"neeko-star-guardian-prestige-edition",
         price :"$ 19.99",
-        type: "limited"
+        type: "Limited"
     },
     {
         imageurl:"poppy-astronaut",
         price :"$ 12.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"poppy-battle-regalia",
         price :"$ 3.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"poppy-bewitching",
         price :"$ 11.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"poppy-lollipoppy",
         price :"$ 9.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"poppy-noxus",
         price :"$ 4.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"poppy-star-guardian",
         price :"$ 14.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"pyke-blood-moon",
         price :"$ 9.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"pyke-empyrean",
         price :"$ 18.99",
-        type: "limited"
+        type: "Limited"
     },
     {
         imageurl:"pyke-project",
         price :"$ 8.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"pyke-psyops",
         price :"$ 7.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"pyke-sentinel",
         price :"$ 13.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"renekton-project",
         price :"$ 7.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"senna-high-noon",
         price :"$ 14.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"senna-true-damage-prestige-edition",
         price :"$ 19.99",
-        type: "limited"
+        type: "Limited"
     },
     {
         imageurl:"sett-spirit-blossom",
         price :"$ 13.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"sion-hextech",
         price :"$ 8.99",
-        type: "legacy"
+        type: "Legacy"
         
     },
     {
         imageurl:"sion-lumber-jack",
         price :"$ 9.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"sion-mechazero",
         price :"$ 7.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"sona-dj",
         price :"$ 17.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"thresh-spirit-blossom",
         price :"$ 9.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"tristana-firefighter",
         price :"$ 8.99",
-        type: "legacy"
+        type: "Legacy"
     },
     {
         imageurl:"vayne-sentinel",
         price :"$ 15.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"xayah-star-guardian",
         price :"$ 16.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"yasuo-truth-dragon",
         price :"$ 11.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"zed-galaxy-slayer",
         price :"$ 12.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"zoe-arcanist-prestige-edition",
         price :"$ 19.99",
-        type: "limited"
+        type: "Limited"
     },
     {
         imageurl:"zoe-edg",
         price :"$ 16.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"zoe-star-guardian",
         price :"$ 16.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"zoe-winter-blessed",
         price :"$ 17.99",
-        type: "limited"
+        type: "Limited"
     },
     {
         imageurl:"jax-empyrean",
         price :"$ 18.99",
-        type: "limited"
+        type: "Limited"
     },
     {
         imageurl:"ksante-empyrean",
         price :"$ 18.99",
-        type: "limited"
+        type: "Limited"
     },
     {
         imageurl:"senna-lunar-eclipse",
         price :"$ 16.99",
-        type: "legendary"
+        type: "Legendary"
     },
     {
         imageurl:"senna-lunar-eclipse-prestige-edition",
         price :"$ 19.99",
-        type: "limited"
+        type: "Limited"
     }
     
 ]  

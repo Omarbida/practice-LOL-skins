@@ -489,7 +489,11 @@ function showContent() {
 });
 }
 setInterval(function() { ObserveInputValue(_search.value); }, 100);
+let oldvalue
 function ObserveInputValue(value) {
     searchValue = value;
-    filterSkins(searchValue)
+    if(oldvalue != value){
+        filterSkins(searchValue)
+    }
+    oldvalue = value
 }

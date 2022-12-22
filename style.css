@@ -68,7 +68,7 @@ body{
 }
 .dropdown-menu{
     background: radial-gradient(rgba(230, 204, 115, 1), rgba(230, 203, 115, 0.824), rgba(148, 114, 57, 1), rgba(85, 66, 39, 1));
-        box-shadow: 0px 0px 20px rgba(237, 205, 99, 0.398);
+    box-shadow: 0px 0px 20px rgba(237, 205, 99, 0.398);
 }
 .input1{ 
     background-color: rgba(0, 0, 0, 0.297);   
@@ -86,7 +86,16 @@ body{
     padding: 5px 5px;    
     border-radius: 10px;
     height: 35px;
-    filter: invert(100%) sepia(1%) saturate(7497%) hue-rotate(40deg) brightness(108%) contrast(101%);
+    background: radial-gradient(rgba(230, 204, 115, 1), rgba(230, 203, 115, 0.824), rgba(148, 114, 57, 1), rgba(85, 66, 39, 1));
+    box-shadow: 0px 0px 20px rgba(237, 205, 99, 0.398);
+    border: 2px solid rgba(230, 204, 115, 1);
+}
+.btn1:hover{
+    scale: 105%;
+}
+.btn2{
+filter: invert(100%) sepia(1%) saturate(7497%) hue-rotate(40deg) brightness(108%) contrast(101%);
+height: 35px;
 }
 
  ::placeholder{

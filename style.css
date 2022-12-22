@@ -86,9 +86,12 @@ body{
     padding: 5px 5px;    
     border-radius: 10px;
     height: 35px;
+    width: 100%;
     background: radial-gradient(rgba(230, 204, 115, 1), rgba(230, 203, 115, 0.824), rgba(148, 114, 57, 1), rgba(85, 66, 39, 1));
     box-shadow: 0px 0px 20px rgba(237, 205, 99, 0.398);
     border: 2px solid rgba(230, 204, 115, 1);
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
 }
 .btn1:hover{
     scale: 105%;
@@ -153,7 +156,7 @@ height: 35px;
 }
 .price{
     position: absolute;
-    top:150px;
+    top:110px;
     display: flex;
     flex-direction: column;
     color: rgba(230, 204, 115, 1);

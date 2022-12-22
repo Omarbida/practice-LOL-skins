@@ -11,6 +11,7 @@ let _card =  '<div  class="box1 col-6 col-md-3 col-sm-4 ">\
             <div id="$$imageurl" class="box" >\
                 <div id="$$imgID" class="imgdiv" style="background-image: url(images/$$imageurl.jpg);"></div>\
                 <div id="$$IDprice" class="price">\
+                    <button class=" btn1" type="submit">More info</button>\
                     <button class=" btn1" type="submit">Order Now</button>\
                     $$price\
                 </div>\
@@ -405,9 +406,30 @@ let skins = [
         imageurl:"zoe-winter-blessed",
         price :"$ 17.99",
         type: "limited"
+    },
+    {
+        imageurl:"jax-empyrean",
+        price :"$ 18.99",
+        type: "limited"
+    },
+    {
+        imageurl:"ksante-empyrean",
+        price :"$ 18.99",
+        type: "limited"
+    },
+    {
+        imageurl:"senna-lunar-eclipse",
+        price :"$ 16.99",
+        type: "legendary"
+    },
+    {
+        imageurl:"senna-lunar-eclipse-prestige-edition",
+        price :"$ 19.99",
+        type: "limited"
     }
     
 ]  
+
 let innerhtml="";
 //show all skins
 

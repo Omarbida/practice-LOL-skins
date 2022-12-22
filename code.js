@@ -471,9 +471,9 @@ showContent();
 }
 //add event listners for fillters values
 _all.addEventListener("click",()=>{selectedType = "All Skins";filterSkins()})
-_legacy.addEventListener("click",()=>{selectedType = "legacy";filterSkins()})
-_legendary.addEventListener("click",()=>{selectedType = "legendary";filterSkins()})
-_limited.addEventListener("click",()=>{selectedType = "limited";filterSkins()})
+_legacy.addEventListener("click",()=>{selectedType = "Legacy";filterSkins()})
+_legendary.addEventListener("click",()=>{selectedType = "Legendary";filterSkins()})
+_limited.addEventListener("click",()=>{selectedType = "Limited";filterSkins()})
 
 function showPrice(ID) {
     

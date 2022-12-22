@@ -4,7 +4,10 @@ let _legacy = document.getElementById("legacy")
 let _legendary = document.getElementById("legendary")
 let _limited = document.getElementById("limited")
 let _filter = document.getElementById("filter")
-
+let _search = document.getElementById("search")
+let _searchButton = document.getElementById("submitsearch")
+let searchValue
+let selectedType = "All Skins"
 let _card =  '<div  class="box1 col-6 col-md-3 col-sm-4 ">\
             <div id="$$imageurl" class="box" >\
                 <div id="$$imgID" class="imgdiv" style="background-image: url(images/$$imageurl.jpg);"></div>\
@@ -15,6 +18,7 @@ let _card =  '<div  class="box1 col-6 col-md-3 col-sm-4 ">\
                 <div class="info">$$name</div>\
             </div>\
         </div>'
+let _nothingFound = '<div class="col-12 nothingwasfound"><img src="images/notfoundicon.png" alt=""> <p>Sorry no Skin was found</p></div> '       
 let skins = [
     {
         imageurl: "ahri-spirit-blossom",
@@ -407,126 +411,48 @@ let skins = [
 ]  
 let innerhtml="";
 //show all skins
-showAllSkins()
-function showAllSkins() {
+
+ filterSkins()
+function filterSkins() {
     innerhtml=""
-    _filter.innerHTML = "All Skins"
+    _filter.innerHTML = selectedType
     skins.forEach((skin) =>{
     let name = skin.imageurl.replaceAll("-"," ")
     let priceID = skin.imageurl.replaceAll("-","_")
     let imgID = skin.imageurl.replaceAll("-","__")
-    if (skin.price != undefined) {
+    if (searchValue == undefined) {
+        searchValue = " "
+    }
+      if (name.includes(searchValue)) {
+       if (selectedType == "All Skins") {
         innerhtml += _card
     .replaceAll("$$imageurl",skin.imageurl)
     .replaceAll("$$name",name)
     .replaceAll("$$price",skin.price)
     .replaceAll("$$IDprice",priceID)
     .replaceAll("$$imgID",imgID)
-
     }else{
-          innerhtml += _card
+        if (skin.type == selectedType) {
+             innerhtml += _card
     .replaceAll("$$imageurl",skin.imageurl)
     .replaceAll("$$name",name)
-    .replaceAll("$$price","")
+    .replaceAll("$$price",skin.price)
     .replaceAll("$$IDprice",priceID)
     .replaceAll("$$imgID",imgID)
-    }
-    
-});
-showContent();
+        }
+    }  
 }
-//show legacy skins
-function showLegacySkins() {
-    innerhtml=""
-    _filter.innerHTML = "Legacy"
-    skins.forEach((skin) =>{
-    let name = skin.imageurl.replaceAll("-"," ")
-    let priceID = skin.imageurl.replaceAll("-","_")
-    let imgID = skin.imageurl.replaceAll("-","__")
-    if (skin.type == "legacy") {
-        if (skin.price != undefined) {
-        innerhtml += _card
-    .replaceAll("$$imageurl",skin.imageurl)
-    .replaceAll("$$name",name)
-    .replaceAll("$$price",skin.price)
-    .replaceAll("$$IDprice",priceID)
-    .replaceAll("$$imgID",imgID)
-
-    }else{
-          innerhtml += _card
-    .replaceAll("$$imageurl",skin.imageurl)
-    .replaceAll("$$name",name)
-    .replaceAll("$$price","")
-    .replaceAll("$$IDprice",priceID)
-    .replaceAll("$$imgID",imgID)
-    }
-    } 
 });
-showContent();
+if (innerhtml == "") {
+    innerhtml = _nothingFound
 }
-//show legendary skins
-function showLegendarySkins() {
-    innerhtml=""
-    _filter.innerHTML = "Legendary"
-    skins.forEach((skin) =>{
-    let name = skin.imageurl.replaceAll("-"," ")
-    let priceID = skin.imageurl.replaceAll("-","_")
-    let imgID = skin.imageurl.replaceAll("-","__")
-    if (skin.type == "legendary") {
-        if (skin.price != undefined) {
-        innerhtml += _card
-    .replaceAll("$$imageurl",skin.imageurl)
-    .replaceAll("$$name",name)
-    .replaceAll("$$price",skin.price)
-    .replaceAll("$$IDprice",priceID)
-    .replaceAll("$$imgID",imgID)
-
-    }else{
-          innerhtml += _card
-    .replaceAll("$$imageurl",skin.imageurl)
-    .replaceAll("$$name",name)
-    .replaceAll("$$price","")
-    .replaceAll("$$IDprice",priceID)
-    .replaceAll("$$imgID",imgID)
-    }
-    } 
-});
-showContent();
-}
-//show limited skins
-function showLimitedSkins() {
-    innerhtml=""
-    _filter.innerHTML = "Limited"
-    skins.forEach((skin) =>{
-    let name = skin.imageurl.replaceAll("-"," ")
-    let priceID = skin.imageurl.replaceAll("-","_")
-    let imgID = skin.imageurl.replaceAll("-","__")
-    if (skin.type == "limited") {
-        if (skin.price != undefined) {
-        innerhtml += _card
-    .replaceAll("$$imageurl",skin.imageurl)
-    .replaceAll("$$name",name)
-    .replaceAll("$$price",skin.price)
-    .replaceAll("$$IDprice",priceID)
-    .replaceAll("$$imgID",imgID)
-
-    }else{
-          innerhtml += _card
-    .replaceAll("$$imageurl",skin.imageurl)
-    .replaceAll("$$name",name)
-    .replaceAll("$$price","")
-    .replaceAll("$$IDprice",priceID)
-    .replaceAll("$$imgID",imgID)
-    }
-    } 
-});
 showContent();
 }
 //add event listners for fillters values
-_all.addEventListener("click",()=>{showAllSkins()})
-_legacy.addEventListener("click",()=>{showLegacySkins()})
-_legendary.addEventListener("click",()=>{showLegendarySkins()})
-_limited.addEventListener("click",()=>{showLimitedSkins()})
+_all.addEventListener("click",()=>{selectedType = "All Skins";filterSkins()})
+_legacy.addEventListener("click",()=>{selectedType = "legacy";filterSkins()})
+_legendary.addEventListener("click",()=>{selectedType = "legendary";filterSkins()})
+_limited.addEventListener("click",()=>{selectedType = "limited";filterSkins()})
 
 function showPrice(ID) {
     
@@ -563,3 +489,7 @@ function showContent() {
      
 });
 }
+_searchButton.addEventListener("click",()=>{
+    searchValue = _search.value;
+    filterSkins(searchValue)
+})

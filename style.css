@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;    
 }
+#bl{
+    position: absolute;
+    top: 70%;
+}
 body{
     background-color: black;
 }

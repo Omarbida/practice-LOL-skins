@@ -1,4 +1,10 @@
 let _content = document.getElementById("content")
+let _all = document.getElementById("all")
+let _legacy = document.getElementById("legacy")
+let _legendary = document.getElementById("legendary")
+let _limited = document.getElementById("limited")
+let _filter = document.getElementById("filter")
+
 let _card =  '<div  class="box1 col-6 col-md-3 col-sm-4 ">\
             <div id="$$imageurl" class="box" >\
                 <div id="$$imgID" class="imgdiv" style="background-image: url(images/$$imageurl.jpg);"></div>\
@@ -12,318 +18,400 @@ let _card =  '<div  class="box1 col-6 col-md-3 col-sm-4 ">\
 let skins = [
     {
         imageurl: "ahri-spirit-blossom",
-        price :"$ 8.99"
+        price :"$ 8.99",
+        type: "legendary"
     },
     {
         imageurl:"akali-star-guardian",
-        price :"$ 7.99"
+        price :"$ 7.99",
+        type: "legendary"
     },
     {
         imageurl:"ashe-fae-dragon",
-        price :"$ 3.99"
+        price :"$ 3.99",
+        type: "legacy"
     },
     {
         imageurl:"ashe-heartseeker",
-        price :"$ 5.99"
+        price :"$ 5.99",
+        type: "legacy"
     },
     {
         imageurl:"ashe-high-noon",
-        price :"$ 9.99"
+        price :"$ 9.99",
+        type: "legendary"
     },
     {
         imageurl:"ashe-project",
-        price :"$ 6.99"
+        price :"$ 6.99",
+        type: "legacy"
     },
     {
         imageurl:"ashe-sherwood-forest",
-        price :"$ 3.99"
+        price :"$ 3.99",
+        type: "legacy"
     },
     {
         imageurl:"chogath-shan-hai-scrolls",
-        price :"$ 6.99"
+        price :"$ 6.99",
+        type: "legacy"
     },
     {
         imageurl:"ekko-star-guardian-prestige",
-        price :"$ 11.99"
+        price :"$ 11.99",
+        type: "limited"
     },
     {
         imageurl:"ekko-true-damage",
-        price :"$ 9.99"
+        price :"$ 9.99",
+        type: "legendary"
+       
     },
     {
         imageurl:"ezreal-pulsefire",
-        price :"$ 18.99"
+        price :"$ 18.99",
+        type: "limited"
     },
     {
         imageurl:"graves-sentinel",
-        price :"$ 8.99"
+        price :"$ 8.99",
+        type: "legendary"
     },
     {
         imageurl:"jhin-dark-cosmic",
-        price :"$ 12.99"
+        price :"$ 12.99",
+        type: "legendary"
     },
     {
         imageurl:"jinx-star-guardian",
-        price :"$ 12.99"
+        price :"$ 12.99",
+        type: "legendary"
     },
     {
         imageurl:"kaisa-star-guardian",
-        price :"$ 12.99"
+        price :"$ 12.99",
+        type: "legendary"
     },
     {
         imageurl:"katarina-battle-queen",
-        price :"$ 9.99"
+        price :"$ 9.99",
+        type: "legacy"
     },
     {
         imageurl:"katarina-redcard",
-        price :"$ 7.99"
+        price :"$ 7.99",
+        type: "legacy"
     },
     {
         imageurl:"kindred-shadowfire",
-        price :"$ 13.99"
+        price :"$ 13.99",
+        type: "legacy"
     },
     {
         imageurl:"kindred-spirit-blossom",
-        price :"$ 15.99"
+        price :"$ 15.99",
+        type: "legendary"
     },
     {
         imageurl:"kindred-super-galaxy",
-        price :"$ 13.99"
+        price :"$ 13.99",
+        type: "legendary"
     },
     {
         imageurl:"leblanc-coven-prestige-edition",
-        price :"$ 19.99"
+        price :"$ 19.99",
+        type: "limited"
     },
     {
         imageurl:"lee-sin-storm-dragon",
-        price :"$ 14.99"
+        price :"$ 14.99",
+        type: "legendary"
     },
     {
         imageurl:"leona-battle-academia",
-        price :"$ 8.99"
+        price :"$ 8.99",
+        type: "legacy"
     },
     {
         imageurl:"leona-battle-academia-prestige-edition",
-        price :"$ 13.99"
+        price :"$ 13.99",
+        type: "limited"
     },
     {
         imageurl:"leona-debonair",
-        price :"$ 6.99"
+        price :"$ 6.99",
+        type: "legacy"
     },
     {
         imageurl:"leona-high-noon",
-        price :"$ 11.99"
+        price :"$ 11.99",
+        type: "legendary"
     },
     {
         imageurl:"leona-lunar-eclipse",
-        price :"$ 12.99"
+        price :"$ 12.99",
+        type: "legendary"
     },
     {
         imageurl:"lucian-high-noon",
-        price :"$ 12.99"
+        price :"$ 12.99",
+        type: "legendary"
     },
     {
         imageurl:"lux-dark-cosmic",
-        price :"$ 14.99"
+        price :"$ 14.99",
+        type: "legendary"
     },
     {
         imageurl:"lux-elementalist",
-        price :"$ 23.99"
+        price :"$ 23.99",
+        type: "limited"
     },
     {
         imageurl:"lux-empyrean",
-        price :"$ 16.99"
+        price :"$ 16.99",
+        type: "limited"
     },
     {
         imageurl:"lux-pajama-guardian",
-        price :"$ 8.99"
+        price :"$ 8.99",
+        type: "legendary"
     },
     {
         imageurl:"lux-spellthief",
-        price :"$ 4.99"
+        price :"$ 4.99",
+        type: "legacy"
     },
     {
         imageurl:"master-yi-cosmic-blade",
-        price :"$ 12.99"
+        price :"$ 12.99",
+        type: "legendary"
     },
     {
         imageurl:"master-yi-assassin",
-        price :"$ 5.99"
+        price :"$ 5.99",
+        type: "legacy"
     },
     {
         imageurl:"master-yi-project",
-        price :"$ 5.99"
+        price :"$ 5.99",
+        type: "legacy"
     },
     {
         imageurl:"master-yi-psyops",
-        price :"$ 6.99"
+        price :"$ 6.99",
+        type: "legacy"
     },
     {
         imageurl:"miss-fortune-battlebunny",
-        price :"$ 12.99"
+        price :"$ 12.99",
+        type: "legendary"
     },
     {
         imageurl:"miss-fortune-gungoddess",
-        price :"$ 12.99"
+        price :"$ 12.99",
+        type: "legendary"
     },
     {
         imageurl:"mordekaiser-dark-star",
-        price :"$ 16.99"
+        price :"$ 16.99",
+        type: "legendary"
     },
     {
         imageurl:"mordekaiser-infernal",
-        price :"$ 4.99"
+        price :"$ 4.99",
+        type: "legacy"
     },
     {
         imageurl:"mordekaiser-project",
-        price :"$ 17.99"
+        price :"$ 17.99",
+        type: "legendary"
     },
     {
         imageurl:"morgana-blackthorn",
-        price :"$ 5.99"
+        price :"$ 5.99",
+        type: "legacy"
     },
     {
         imageurl:"morgana-blade-mistress",
-        price :"$ 6.99"
+        price :"$ 6.99",
+        type: "legacy"
     },
     {
         imageurl:"morgana-coven",
-        price :"$ 12.99"
+        price :"$ 12.99",
+        type: "legendary"
     },
     {
         imageurl:"morgana-dawn-bringer",
-        price :"$ 9.99"
+        price :"$ 9.99",
+        type: "legendary"
     },
     {
         imageurl:"morgana-star-nemesis",
-        price :"$ 11.99"
+        price :"$ 11.99",
+        type: "legendary"
     },
     {
         imageurl:"neeko-star-guardian-prestige-edition",
-        price :"$ 19.99"
+        price :"$ 19.99",
+        type: "limited"
     },
     {
         imageurl:"poppy-astronaut",
-        price :"$ 12.99"
+        price :"$ 12.99",
+        type: "legacy"
     },
     {
         imageurl:"poppy-battle-regalia",
-        price :"$ 3.99"
+        price :"$ 3.99",
+        type: "legacy"
     },
     {
         imageurl:"poppy-bewitching",
-        price :"$ 11.99"
+        price :"$ 11.99",
+        type: "legendary"
     },
     {
         imageurl:"poppy-lollipoppy",
-        price :"$ 9.99"
+        price :"$ 9.99",
+        type: "legacy"
     },
     {
         imageurl:"poppy-noxus",
-        price :"$ 4.99"
+        price :"$ 4.99",
+        type: "legacy"
     },
     {
         imageurl:"poppy-star-guardian",
-        price :"$ 14.99"
+        price :"$ 14.99",
+        type: "legendary"
     },
     {
         imageurl:"pyke-blood-moon",
-        price :"$ 9.99"
+        price :"$ 9.99",
+        type: "legendary"
     },
     {
         imageurl:"pyke-empyrean",
-        price :"$ 18.99"
+        price :"$ 18.99",
+        type: "limited"
     },
     {
         imageurl:"pyke-project",
-        price :"$ 8.99"
+        price :"$ 8.99",
+        type: "legendary"
     },
     {
         imageurl:"pyke-psyops",
-        price :"$ 7.99"
+        price :"$ 7.99",
+        type: "legacy"
     },
     {
         imageurl:"pyke-sentinel",
-        price :"$ 13.99"
+        price :"$ 13.99",
+        type: "legendary"
     },
     {
         imageurl:"renekton-project",
-        price :"$ 7.99"
+        price :"$ 7.99",
+        type: "legacy"
     },
     {
         imageurl:"senna-high-noon",
-        price :"$ 14.99"
+        price :"$ 14.99",
+        type: "legendary"
     },
     {
         imageurl:"senna-true-damage-prestige-edition",
-        price :"$ 19.99"
+        price :"$ 19.99",
+        type: "limited"
     },
     {
         imageurl:"sett-spirit-blossom",
-        price :"$ 13.99"
+        price :"$ 13.99",
+        type: "legendary"
     },
     {
         imageurl:"sion-hextech",
-        price :"$ 8.99"
+        price :"$ 8.99",
+        type: "legacy"
         
     },
     {
         imageurl:"sion-lumber-jack",
-        price :"$ 9.99"
+        price :"$ 9.99",
+        type: "legendary"
     },
     {
         imageurl:"sion-mechazero",
-        price :"$ 7.99"
+        price :"$ 7.99",
+        type: "legacy"
     },
     {
         imageurl:"sona-dj",
-        price :"$ 17.99"
+        price :"$ 17.99",
+        type: "legacy"
     },
     {
         imageurl:"thresh-spirit-blossom",
-        price :"$ 9.99"
+        price :"$ 9.99",
+        type: "legendary"
     },
     {
         imageurl:"tristana-firefighter",
-        price :"$ 8.99"
+        price :"$ 8.99",
+        type: "legacy"
     },
     {
         imageurl:"vayne-sentinel",
-        price :"$ 15.99"
+        price :"$ 15.99",
+        type: "legendary"
     },
     {
         imageurl:"xayah-star-guardian",
-        price :"$ 16.99"
+        price :"$ 16.99",
+        type: "legendary"
     },
     {
         imageurl:"yasuo-truth-dragon",
-        price :"$ 11.99"
+        price :"$ 11.99",
+        type: "legendary"
     },
     {
         imageurl:"zed-galaxy-slayer",
-        price :"$ 12.99"
+        price :"$ 12.99",
+        type: "legendary"
     },
     {
         imageurl:"zoe-arcanist-prestige-edition",
-        price :"$ 19.99"
+        price :"$ 19.99",
+        type: "limited"
     },
     {
         imageurl:"zoe-edg",
-        price :"$ 16.99"
+        price :"$ 16.99",
+        type: "legendary"
     },
     {
         imageurl:"zoe-star-guardian",
-        price :"$ 16.99"
+        price :"$ 16.99",
+        type: "legendary"
     },
     {
         imageurl:"zoe-winter-blessed",
-        price :"$ 17.99"
+        price :"$ 17.99",
+        type: "limited"
     }
     
 ]  
-let skinPrices = [];
 let innerhtml="";
-skins.forEach((skin) =>{
+//show all skins
+showAllSkins()
+function showAllSkins() {
+    innerhtml=""
+    _filter.innerHTML = "All Skins"
+    skins.forEach((skin) =>{
     let name = skin.imageurl.replaceAll("-"," ")
     let priceID = skin.imageurl.replaceAll("-","_")
     let imgID = skin.imageurl.replaceAll("-","__")
@@ -343,22 +431,103 @@ skins.forEach((skin) =>{
     .replaceAll("$$IDprice",priceID)
     .replaceAll("$$imgID",imgID)
     }
-   skinPrices.push(priceID)
     
 });
- _content.innerHTML = innerhtml;
-// console.log(skinPrices);
+showContent();
+}
+//show legacy skins
+function showLegacySkins() {
+    innerhtml=""
+    _filter.innerHTML = "Legacy"
+    skins.forEach((skin) =>{
+    let name = skin.imageurl.replaceAll("-"," ")
+    let priceID = skin.imageurl.replaceAll("-","_")
+    let imgID = skin.imageurl.replaceAll("-","__")
+    if (skin.type == "legacy") {
+        if (skin.price != undefined) {
+        innerhtml += _card
+    .replaceAll("$$imageurl",skin.imageurl)
+    .replaceAll("$$name",name)
+    .replaceAll("$$price",skin.price)
+    .replaceAll("$$IDprice",priceID)
+    .replaceAll("$$imgID",imgID)
 
-skins.forEach((skin)=>{
-     document.getElementById(skin.imageurl).addEventListener("mouseenter",()=>{
-        showPrice(skin.imageurl.replaceAll("-","_"));
-        darkenBackground(skin.imageurl.replaceAll("-","__"))
-     });
-     document.getElementById(skin.imageurl).addEventListener("mouseleave",()=>{
-        hidePrice(skin.imageurl.replaceAll("-","_"));
-        unDarkenBackground(skin.imageurl.replaceAll("-","__"))
-     });
+    }else{
+          innerhtml += _card
+    .replaceAll("$$imageurl",skin.imageurl)
+    .replaceAll("$$name",name)
+    .replaceAll("$$price","")
+    .replaceAll("$$IDprice",priceID)
+    .replaceAll("$$imgID",imgID)
+    }
+    } 
 });
+showContent();
+}
+//show legendary skins
+function showLegendarySkins() {
+    innerhtml=""
+    _filter.innerHTML = "Legendary"
+    skins.forEach((skin) =>{
+    let name = skin.imageurl.replaceAll("-"," ")
+    let priceID = skin.imageurl.replaceAll("-","_")
+    let imgID = skin.imageurl.replaceAll("-","__")
+    if (skin.type == "legendary") {
+        if (skin.price != undefined) {
+        innerhtml += _card
+    .replaceAll("$$imageurl",skin.imageurl)
+    .replaceAll("$$name",name)
+    .replaceAll("$$price",skin.price)
+    .replaceAll("$$IDprice",priceID)
+    .replaceAll("$$imgID",imgID)
+
+    }else{
+          innerhtml += _card
+    .replaceAll("$$imageurl",skin.imageurl)
+    .replaceAll("$$name",name)
+    .replaceAll("$$price","")
+    .replaceAll("$$IDprice",priceID)
+    .replaceAll("$$imgID",imgID)
+    }
+    } 
+});
+showContent();
+}
+//show limited skins
+function showLimitedSkins() {
+    innerhtml=""
+    _filter.innerHTML = "Limited"
+    skins.forEach((skin) =>{
+    let name = skin.imageurl.replaceAll("-"," ")
+    let priceID = skin.imageurl.replaceAll("-","_")
+    let imgID = skin.imageurl.replaceAll("-","__")
+    if (skin.type == "limited") {
+        if (skin.price != undefined) {
+        innerhtml += _card
+    .replaceAll("$$imageurl",skin.imageurl)
+    .replaceAll("$$name",name)
+    .replaceAll("$$price",skin.price)
+    .replaceAll("$$IDprice",priceID)
+    .replaceAll("$$imgID",imgID)
+
+    }else{
+          innerhtml += _card
+    .replaceAll("$$imageurl",skin.imageurl)
+    .replaceAll("$$name",name)
+    .replaceAll("$$price","")
+    .replaceAll("$$IDprice",priceID)
+    .replaceAll("$$imgID",imgID)
+    }
+    } 
+});
+showContent();
+}
+//add event listners for fillters values
+_all.addEventListener("click",()=>{showAllSkins()})
+_legacy.addEventListener("click",()=>{showLegacySkins()})
+_legendary.addEventListener("click",()=>{showLegendarySkins()})
+_limited.addEventListener("click",()=>{showLimitedSkins()})
+
 function showPrice(ID) {
     
     document.getElementById(ID).style.visibility = "visible"
@@ -375,5 +544,22 @@ function unDarkenBackground(ID) {
    
     document.getElementById(ID).style.filter = "brightness(1)"
 }
-
-
+function showContent() {
+    _content.innerHTML = innerhtml;
+    //mouse related efects
+    skins.forEach((skin)=>{
+        if (document.getElementById(skin.imageurl)) {
+            document.getElementById(skin.imageurl).addEventListener("mouseenter",()=>{
+        showPrice(skin.imageurl.replaceAll("-","_"));
+        darkenBackground(skin.imageurl.replaceAll("-","__"))        
+     });
+        }
+     if (document.getElementById(skin.imageurl)) {
+        document.getElementById(skin.imageurl).addEventListener("mouseleave",()=>{
+        hidePrice(skin.imageurl.replaceAll("-","_"));
+        unDarkenBackground(skin.imageurl.replaceAll("-","__"))
+     });
+     }
+     
+});
+}

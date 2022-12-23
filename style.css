@@ -121,6 +121,7 @@ height: 35px;
 .content{
     display: flex;
     flex-wrap: wrap;    
+    padding-bottom: 20vh;
 }
 .box1{
     display: flex;

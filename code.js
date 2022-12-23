@@ -510,6 +510,7 @@ function showContent() {
      
 });
 }
+//search 
 setInterval(function() { ObserveInputValue(_search.value.toLowerCase()); }, 100);
 let oldvalue
 function ObserveInputValue(value) {

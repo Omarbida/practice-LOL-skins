@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box; 
     user-select: none;   
+    /* transition: all 0.3s ease; */
 }
 
 #bl{
@@ -178,8 +179,11 @@ height: 35px;
     text-shadow: 2px 2px 5px rgba(230, 204, 115, 1);
 }
 .box:hover{
-    scale: 105%;
+    scale: 110%;
     /* filter: brightness(0.5); */
+}
+.box{
+    transition: all 0.3s ease;
 }
 .price{
     position: absolute;

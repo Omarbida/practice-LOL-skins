@@ -8,7 +8,7 @@ let _filter = document.getElementById('filter')
 let _search = document.getElementById('search')
 let _modal = document.getElementById('modal')
 let _modalData =
-'<div class="modal-content">\
+'<div id="modal-content" class="modal-content">\
  <div class="modalhead"><div class="skin-name">$$skinname</div><button id="closemodel" class="close-modal-btn">&times;</button></div>\
         <div class="modalcontent">\
             <div class="data">\
@@ -693,10 +693,20 @@ function showInfo(skin){
         .replaceAll('$$imgurl',skin.imageurl)
     
     _modal.innerHTML = infoContent  
-    _modal.style.display = "block";  
+    _modal.style.display = "block"
+     const _modalContent = document.getElementById('modal-content')
+    _modalContent.style.scale= `${50}%`
     body.style.overflow = 'hidden'
+    const animate = setInterval(function () {
+      _modalContent.style.scale= `${50+i}%`
+      i+=3
+      if (i>50) {
+        clearInterval(animate)
+        _modalContent.style.scale= `${100}%`
+      }
+      
+    },1)
     document.getElementById('closemodel').addEventListener('click',()=>{
-        console.log("123");
         _modal.style.display = "none";
         body.style.overflow = 'auto'
     })

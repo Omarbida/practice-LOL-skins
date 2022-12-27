@@ -12,8 +12,9 @@ let _modalData =
  <div class="modalhead"><div class="skin-name">$$skinname</div><button id="closemodel" class="close-modal-btn">&times;</button></div>\
         <div class="modalcontent">\
             <div class="data">\
-            $$skinname  <br/>\
-           a <span class="span">$$type</span> Skin for $$champname released on <span class="span">$$releasedate</span><br/>\
+            <p>$$skinname</p> \
+            <p>a <span class="span">$$type</span> Skin for $$champname</p>\
+            <p>released on <span class="span">$$releasedate</span></p>\
             Price on Riot store: <span class="span">$$RpPrice RP</span> <br />\
             <button class=" btn3">Order Now</button>\
             <p class="sub">Order now and save up to 40% on purchase</p>\

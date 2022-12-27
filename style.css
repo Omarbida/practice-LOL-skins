@@ -48,7 +48,7 @@ body{
         padding-bottom: 10px;
     }
     .modal-content {
-            width: 60%;
+            width: 80%;
     }
     .data {
             font-size: 20px;
@@ -259,8 +259,9 @@ justify-content: center;
 .modalcontent{
     display: flex;
     height: 90%;
-   
+   gap: 20px;
 }
+
 .data{
    width: 55%; 
    /* font-size: 20px;
@@ -268,14 +269,18 @@ justify-content: center;
    padding-top: 50px;
    line-height: 40px;
    text-shadow: none;
+   display: flex;
+   flex-direction: column;
 }
 .data-img{
     height: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 .infoimg{
     height: 430px;
-    scale: 107%;
+    scale: 105%;
     
 }
 .span{
@@ -289,14 +294,13 @@ justify-content: center;
     font-weight: bold;
     border-radius: 8px;
     height: auto;
-    width: 94%;
+    width: 80%;
     background: radial-gradient(rgb(205, 181, 102), rgb(164, 143, 82), rgba(148, 114, 57, 1), rgba(85, 66, 39, 1));
     /* background-color: rgba(36, 232, 82, 1); */
     box-shadow: 0px 0px 10px rgba(1, 2, 0, 0.05);
     border: 1px solid rgba(0, 0, 0, 0.5) ;
-   
     margin: 13px auto;
-    
+    align-self: flex-end;
 }
 .btn3:hover{
     scale: 105%;
